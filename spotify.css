@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background-color: #010000;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #000;
+  width: 350px;
+  margin-right: 9px;
+  box-shadow: 0 0 10px rgb(128, 122, 122);
+}
+
+.main_content {
+  background-color: #121212;
+  flex: 1;
+  overflow: auto;
+}
+
+.micue_player {
+  background-color: rgb(49, 125, 36);
+  position: fixed;
+  bottom: 0px;
+  height: 72px;
+  width: 100%;
+  display: flex;
+}
+
+.navitems {
+  background-color: #121212;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  line-height: 40px;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.home {
+  padding: 4px 12px;
+}
+
+.search {
+  opacity: 0.6;
+  padding: 4px 12px;
+}
+
+.search:hover {
+  opacity: 1;
+}
+
+.libr {
+  background-color: #000;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.libitem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.labicon i {
+  margin-right: 0.7rem;
+}
+
+.caeat1 {
+  padding: 8px 22px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 40px;
+  font-size: 0.85rem;
+  background-color: #212121;
+}
+
+.caeat1 .p {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+button {
+  color: black;
+  padding: 5px 20px;
+  border-radius: 2rem;
+  font-weight: 700;
+  border: none;
+}
+
+.head {
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  padding: 0.65rem 0;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+}
+
+.backword i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  background-color: #212121;
+  width: 1.8rem;
+  height: 1.8rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.user {
+  margin-right: 1rem;
+}
+
+.instal {
+  color: white;
+  background-color: #121212;
+  text-align: center;
+}
+
+.instal i {
+  margin-bottom: -3px;
+  margin-right: 4px;
+}
+
+.icon {
+  margin-right: 0.85rem;
+}
+
+.cont {
+  margin: 0.5rem 1rem;
+}
+
+.content {
+  margin: 1.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 179px;
+  height: 257px;
+  padding: 16px;
+  border-radius: 5px;
+  background-color: rgb(26, 25, 25);
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.card:hover {
+  background-color: rgb(60, 58, 56);
+}
+
+.card-img {
+  width: 147px;
+  height: 147px;
+  border-radius: 5px;
+}
+
+.card-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.card-info {
+  font-size: 0.75rem;
+}
+
+.box {
+  width: 90%;
+  height: 20%;
+  border-top: 1px solid rgba(255, 255, 255, 0.536);
+  margin: 4rem auto;
+}
+
+.box li {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-left: 1rem;
+  color: gray;
+}
+
+.box li:hover {
+  color: white;
+}
+
+@media (max-width: 820px) and (min-width: 200px) {
+  .explor,
+  #left {
+    display: none;
+  }
+  .content {
+    margin: 1.5rem 1rem;
+    display: grid;
+    grid-template-columns: 179px 179px 179px 179px 179px 179px;
+    overflow-x: scroll;
+    column-gap: 1rem;
+  }
+}
+
+.comany {
+  margin: 3rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.co1 {
+  display: flex;
+}
+
+.co1 ul {
+  margin-left: 2rem;
+}
+
+.co1 .use {
+  margin-left: 6rem;
+}
+
+.comany li {
+  color: gray;
+  font-size: 0.85rem;
+  line-height: 30px;
+}
+
+.comany li:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.soscale_media i {
+  margin-right: 0.85rem;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.soscale_media i:hover {
+  color: white;
+}
+
+.curnt_song {
+  width: 25%;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.curnt_song i {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.song p {
+  font-size: 0.7rem;
+}
+
+.player {
+  width: 50%;
+  background-color: #121212;
+}
+
+.player .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.player .list i {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  opacity: 0.6;
+}
+
+.player .list i:hover {
+  opacity: 1;
+}
+
+.player .list .pla {
+  font-size: 2rem;
+  opacity: 1;
+}
+
+.player .range {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.player input {
+  width: 80%;
+}
+
+.play {
+  width: 25%;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  justify-content: space-evenly;
+}
+
+.play i {
+  color: gray;
+}
+
+.play i:hover {
+  color: rgba(255, 255, 255, 0.758);
+}
+
+@media (max-width: 700px) and (min-width: 50px) {
+  .play,
+  .curnt_song {
+    display: none;
+  }
+  .player {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) and (min-width: 50px) {
+  .sidebar {
+    display: none;
+  }
+}
